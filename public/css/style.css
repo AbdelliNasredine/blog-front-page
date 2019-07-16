@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: rgb(93, 148, 230);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.082);
+    width: 100%;
+    padding: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.logo {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.link {
+    padding: 12px 24px;
+}
+
+/*  */
+
+.upper {
+    margin: 20px 0;
+}
+
+.upper h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.068);
+    color: rgb(74, 77, 83);
+}
+
+.upper p {
+    color: rgb(74, 77, 83);
+}
+
+/*  */
+
+main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, .1);
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    transition: all .5s ease-in-out;
+    transform: translateY(-4px);  
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.25) ;
+}
+.card:hover .card-img {
+    opacity: .8;
+    box-shadow: inset 0px 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-img {
+    width: 100%;
+    background-size: cover;
+    height: 160px;
+    position: relative;
+}
+
+
+.card .card-img .category {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background: rgb(93, 148, 230);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    padding: 10px; 
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-title {
+    font-weight: 700;
+    color: rgb(74, 77, 83);
+}
+
+.card-text {
+    margin: 8px 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(97, 101, 107);
+}
+
+.bottom-fixed {
+    position: absolute;
+    bottom: 0;
+}
+
+/*  */
